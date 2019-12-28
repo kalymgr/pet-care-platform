@@ -1,0 +1,22 @@
+{
+  "name": "pet-care-platform",
+  "version": "1.0.0",
+  "description": "This project is implemented as a part of the\r Coursera online course \"Front-End Web UI Frameworks and Tools: Bootstrap 4\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalymgr/pet-care-platform.git"
+  },
+  "author": "MKT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalymgr/pet-care-platform/issues"
+  },
+  "homepage": "https://github.com/kalymgr/pet-care-platform#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

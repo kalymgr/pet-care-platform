@@ -1,3 +1,7 @@
 .navbar-dark {
   background-color: #CE5922;
   position: relative; }
+
+/* Jumbotron settings */
+.jumbotron {
+  margin-bottom: 0px; }

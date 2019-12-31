@@ -5,3 +5,6 @@
 /* Jumbotron settings */
 .jumbotron {
   margin-bottom: 0px; }
+
+img.img-thumbnail {
+  width: 150px; }

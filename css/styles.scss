@@ -1,5 +1,6 @@
 $primary-color: #CE5922;
 $secondary-color: #2298ce;
+$image-thumbnail-width: 150px;
 
 .navbar-dark {
   background-color: $primary-color;
@@ -9,4 +10,8 @@ $secondary-color: #2298ce;
 /* Jumbotron settings */
 .jumbotron {
   margin-bottom: 0px;
+}
+
+img.img-thumbnail {
+  width: $image-thumbnail-width;
 }

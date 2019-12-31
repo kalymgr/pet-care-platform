@@ -78,7 +78,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,  // enable dynamic expansion
                     cwd: './',  // src matches are relative to this path
-                    src: ['img/*.{png, jpg, gif}'],
+                    src: ['img/*'],
                     dest: 'dist'
                 }]
             }
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['search-lost-pet.html', 'index.html']
+                src: ['post-lost-pet-info.html', 'index.html']
             },
             options: {
                 flow: {
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
         // options.assetDirs contains the directories for finding the assets
         // according to their relative path
         usemin: {
-            html: ['dist/search-lost-pet.html'],
+            html: ['dist/post-lost-pet-info.html'],
             options: {
                 assetDirs: ['dist', 'dist/css', 'dist/js']
             }
@@ -163,7 +163,7 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {  // dictionary of files
-                    'dist/search-lost-pet.html': 'dist/search-lost-pet.html',
+                    'dist/post-lost-pet-info.html': 'dist/post-lost-pet-info.html',
 
                 }
             }

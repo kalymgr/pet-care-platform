@@ -86,7 +86,7 @@ module.exports = function(grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['post-lost-pet-info.html', 'index.html']
+                src: ['post-lost-pet-info.html', 'index.html', 'search-lost-pet.html']
             },
             options: {
                 flow: {
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
         // options.assetDirs contains the directories for finding the assets
         // according to their relative path
         usemin: {
-            html: ['dist/post-lost-pet-info.html'],
+            html: ['dist/post-lost-pet-info.html', 'dist/search-lost-pet.html', 'dist/index.html'],
             options: {
                 assetDirs: ['dist', 'dist/css', 'dist/js']
             }
@@ -164,6 +164,8 @@ module.exports = function(grunt) {
                 },
                 files: {  // dictionary of files
                     'dist/post-lost-pet-info.html': 'dist/post-lost-pet-info.html',
+                    'dist/search-lost-pet.html': 'dist/search-lost-pet.html',
+                    'dist/index.html': 'dist/index.html'
 
                 }
             }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>List of veterinaries</title>
+</head>
+
+<body>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6">
+                <h1>Pet Care Platform</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./">
+                    <span class="fa fa-home fa-lg">Home</span>
+                </a> </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="lostpetsDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-search fa-lg">Lost pets</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lostpetsDropdown">
+                        <a class="dropdown-item" href="./post-lost-pet-info.html">
+                            <span class="fa fa-edit fa-lg">Post lost pet info</span>
+                        </a>
+                        <a class="dropdown-item" href="./search-lost-pet.html">
+                            <span class="fa fa-search fa-lg">Lost & Found Pets</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="petAdoptionDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-child fa-lg">Pet Adoption</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="petAdoptionDropdown">
+                        <a class="dropdown-item" href="./give-pet-for-adoption.html">
+                            <span class="fa fa-edit fa-lg">Give pet for adoption</span>
+                        </a>
+                        <a class="dropdown-item" href="pet-adoption-list.html">
+                            <span class="fa fa-paw fa-lg">Pets for adoption</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of navigation bar -->
+
+<div class="container">
+    <!-- Breadcrumb -->
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a> </li>
+            <li class="breadcrumb-item active">List of veterinaries</li>
+        </ol>
+    </div>
+    <!--End of Breadcrumb -->
+
+    <div class="row">
+        <div class="col-12"><h1>List of veterinaries</h1></div>
+    </div>
+
+
+    <div class="row mb-3 justify-content-center">
+        <div class="col-10">
+            <!-- Search filters -->
+            <form>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-2" for="vetName">Vet name</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="vetName" name="vetName" placeholder="Name">
+                    </div>
+                    <label class="col-form-label col-md-2" for="vetArea">Area</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="vetArea" name="vetArea" placeholder="Area">
+                    </div>
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+            <!-- End of search filters -->
+        </div>
+    </div>
+    <!-- Veterinaries list -->
+    <div class="row">
+        <div class="col-12">
+            <div class="media align-items-center">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/veterinaries/vet1.jpg" alt="Vet 1">
+                <div class="media-body d-none d-md-block">
+                    <h2>Very good veterinary<span class="badge badge-primary">Featured</span> </h2>
+                    <p class="d-sm-block">
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="media align-items-center">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/veterinaries/vet2.jpg" alt="Vet 1">
+                <div class="media-body d-none d-md-block">
+                    <h2>Very good veterinary</h2>
+                    <p class="d-sm-block">
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="media align-items-center">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/veterinaries/vet3.jpg" alt="Vet 1">
+                <div class="media-body d-none d-md-block">
+                    <h2>Very good veterinary</h2>
+                    <p class="d-sm-block">
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                        Text about the veterinary.Text about the veterinary.Text about the veterinary.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of Veterinaries list -->
+
+
+</div>
+
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

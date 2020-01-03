@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>Contact us</title>
+</head>
+
+<body>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6">
+                <h1>Pet Care Platform</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./">
+                    <span class="fa fa-home fa-lg">Home</span>
+                </a> </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="lostpetsDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-search fa-lg">Lost pets</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lostpetsDropdown">
+                        <a class="dropdown-item" href="./post-lost-pet-info.html">
+                            <span class="fa fa-edit fa-lg">Post lost pet info</span>
+                        </a>
+                        <a class="dropdown-item" href="./search-lost-pet.html">
+                            <span class="fa fa-search fa-lg">Lost & Found Pets</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="petAdoptionDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-paw fa-lg">Pet Adoption</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="petAdoptionDropdown">
+                        <a class="dropdown-item" href="./give-pet-for-adoption.html">
+                            <span class="fa fa-edit fa-lg">Give pet for adoption</span>
+                        </a>
+                        <a class="dropdown-item" href="pet-adoption-list.html">
+                            <span class="fa fa-paw fa-lg">Pets for adoption</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item active"><a class="nav-link" href="./contactus.html">
+                    <span class="fa fa-phone fa-lg">Contact us</span>
+                </a> </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of navigation bar -->
+
+<div class="container">
+    <!-- Breadcrumb -->
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a> </li>
+            <li class="breadcrumb-item active">Contact us</li>
+        </ol>
+    </div>
+    <!--End of Breadcrumb -->
+
+    <div class="row">
+        <div class="col-12"><h1>Contact us</h1></div>
+    </div>
+
+    <div class="row">
+        <!-- Contact info and Contact buttons-->
+        <div class="col-12 col-md-6">
+            <h2>Address details</h2>
+            <div class="row">
+                <div class="col-12">
+                    <address>
+                        Athens, Greece <br>
+                        PC: 11147 <br>
+                        <i class="fa fa-phone"></i> +210 24444444 <br>
+                        <i class="fa fa-fa"></i> +210 24444445 <br>
+                        <i class="fa fa-email"></i> info@petcareplatform.com <br>
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" href="tel:+1234">
+                            <i class="fa fa-phone"></i> Call
+                        </a>
+                        <a role="button" class="btn btn-info">
+                            <i class="fa fa-skype"></i> Skype
+                        </a>
+                        <a role="button" class="btn btn-success" href="mailto:info@petcareplatform.com">
+                            <i class="fa fa-envelope-o"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- End of Contact info and Contact buttons -->
+
+        <!-- Contact form -->
+        <div class="col-12 col-md-6">
+            <h2>Contact form</h2>
+            <form>
+                <div class="row form-group">
+                    <label class="col-form-label col-2" for="contactName">Name</label>
+                    <div class="col-10" >
+                        <input class="form-control" id="contactName" name="contactName" placeholder="Name">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-form-label col-2" for="contactEmail">Email</label>
+                    <div class="col-10">
+                        <input type="email" class="form-control" id="contactEmail"
+                               name="contactEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-form-label" for="message">Message</label>
+                    <div class="col-12">
+                        <textarea class="form-control" id="message" name="message"
+                                  placeholder="Your message" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-2">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- End of Contact form -->
+
+    </div>
+
+
+</div>
+
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

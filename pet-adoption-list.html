@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
 
-    <title>Lost & Found pets</title>
+    <title>Pets for adoption</title>
 </head>
+
 <body>
+
 <header class="jumbotron">
     <div class="container">
         <div class="row justify-content-center">
@@ -36,7 +38,7 @@
                 <li class="nav-item"><a class="nav-link" href="./">
                     <span class="fa fa-home fa-lg">Home</span>
                 </a> </li>
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="lostpetsDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fa fa-search fa-lg">Lost pets</span>
@@ -47,6 +49,20 @@
                         </a>
                         <a class="dropdown-item" href="./search-lost-pet.html">
                             <span class="fa fa-search fa-lg">Lost & Found Pets</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="petAdoptionDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-child fa-lg">Pet Adoption</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="petAdoptionDropdown">
+                        <a class="dropdown-item" href="./give-pet-for-adoption.html">
+                            <span class="fa fa-edit fa-lg">Give pet for adoption</span>
+                        </a>
+                        <a class="dropdown-item" href="pet-adoption-list.html">
+                            <span class="fa fa-paw fa-lg">Pets for adoption</span>
                         </a>
                     </div>
                 </li>
@@ -61,19 +77,20 @@
     <div class="row">
         <ol class="col-12 breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a> </li>
-            <li class="breadcrumb-item active">Lost & Found Pets</li>
+            <li class="breadcrumb-item active">Pets for adoption</li>
         </ol>
     </div>
     <!--End of Breadcrumb -->
+
     <div class="row">
-        <div class="col-12"><h1>Lost & Found Pets</h1></div>
+        <div class="col-12"><h1>List of pets available for adoption</h1></div>
     </div>
-    <div class="row mb-3">
-        <div class="col-12">
+    <div class="row mb-3 justify-content-center">
+        <div class="col-10">
             <!-- Search filters -->
             <form>
                 <div class="form-group row">
-                    <label class="col-form-label col-md-1" for="petType">Pet type</label>
+                    <label class="col-form-label col-md-2" for="petType">Pet type</label>
                     <div class="col-md-2">
                         <select class="form-control" id="petType">
                             <option>Dog</option>
@@ -82,76 +99,80 @@
                         </select>
                     </div>
                     <label class="col-form-label col-md-2" for="petColors">Pet colors</label>
-                    <div class="col-md-2">
-                        <input class="form-control" type="text" id="petColors" name="petColors" placeholder="Pet colors...">
-                    </div>
-                    <label class="col-form-label col-md-2" for="areaFound">Area found</label>
-                    <div class="col-md-2">
-                        <input class="form-control" type="text" id="areaFound" name="areaFound" placeholder="Area found">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="petColors" name="petColors" placeholder="Pet colors">
                     </div>
                     <div class="col-md-1">
                         <button type="submit" class="btn btn-primary">Search</button>
                     </div>
                 </div>
             </form>
-            <!-- End of Search filters -->
+            <!-- End of search filters -->
+        </div>
+    </div>
+    <!-- Pets list -->
+    <div class="row">
+        <div class="col-12">
+            <div class="media align-items-center">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/bugs.jpg" alt="Bugs">
+                <div class="media-body d-none d-md-block">
+                    <h2>Pet for adoption <span class="badge badge-primary">New</span> </h2>
+                    <p class="d-sm-block">
+                        Pet for adoption.Pet for adoption.Pet for adoption.Pet for adoption.
+                        Pet for adoption.Pet for adoption.Pet for adoption.Pet for adoption.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">I want it!</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             <div class="media align-items-center">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/bugs.jpg" alt="bugs">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/lacta.jpg" alt="Lacta">
                 <div class="media-body d-none d-md-block">
-                    <h2>Pet found!! <span class="badge badge-primary">Found</span> </h2>
+                    <h2>Pet for adoption </h2>
                     <p class="d-sm-block">
-                        Pet found in New York area!Pet found in New York area!Pet found in New York area!
-                        Pet found in New York area!Pet found in New York area!Pet found in New York area!
+                        Pet for adoption.Pet for adoption.Pet for adoption.Pet for adoption.
+                        Pet for adoption.Pet for adoption.Pet for adoption.Pet for adoption.
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-secondary">It's my pet!</button>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="media align-items-center">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/lacta.jpg" alt="bugs">
-                <div class="media-body d-none d-md-block">
-                    <h2>Pet found <span class="badge badge-primary">Found</span></h2>
-                    <p class="d-sm-block">
-                        Pet found in New York area!Pet found in New York area!Pet found in New York area!
-                        Pet found in New York area!Pet found in New York area!Pet found in New York area!
-                    </p>
-                </div>
-                <div>
-                    <button class="btn btn-secondary">It's my pet!</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="media align-items-center">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/rocky.jpg" alt="bugs">
-                <div class="media-body d-none d-md-block">
-                    <h2>Pet lost!!<span class="badge badge-danger">Lost</span></h2>
-                    <p class="d-sm-block">
-                        Pet lost in New York area!Pet lost in New York area!Pet lost in New York area!
-                        Pet lost in New York area!Pet lost in New York area!Pet lost in New York area!
-                    </p>
-                </div>
-                <div>
-                    <button class="btn btn-secondary">It's my pet!</button>
+                    <button class="btn btn-secondary">I want it!</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="media align-items-center">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/rocky.jpg" alt="Rocky">
+                <div class="media-body d-none d-md-block">
+                    <h2>Pet for adoption </h2>
+                    <p class="d-sm-block">
+                        Pet for adoption.Pet for adoption.Pet for adoption.Pet for adoption.
+                        Pet for adoption.Pet for adoption.Pet for adoption.Pet for adoption.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">I want it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Pets list -->
+
+
 </div>
 
-<!-- Bootstrap necessary javascript -->
 <!-- build:js js/main.js -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 <!-- endbuild -->
 </body>
+
 </html>

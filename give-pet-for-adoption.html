@@ -14,6 +14,7 @@
 
     <title>Post lost pet info</title>
 </head>
+
 <body>
 <header class="jumbotron">
     <div class="container">
@@ -36,7 +37,7 @@
                 <li class="nav-item"><a class="nav-link" href="./">
                     <span class="fa fa-home fa-lg">Home</span>
                 </a> </li>
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="lostpetsDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fa fa-search fa-lg">Lost pets</span>
@@ -50,7 +51,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="petAdoptionDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fa fa-child fa-lg">Pet Adoption</span>
@@ -75,45 +76,49 @@
     <div class="row">
         <ol class="col-12 breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a> </li>
-            <li class="breadcrumb-item active">Post lost pet info</li>
+            <li class="breadcrumb-item active">Give pet for adoption</li>
         </ol>
     </div>
     <!--End of Breadcrumb -->
 
     <div class="row">
-        <div class="col-12"><h1>Post lost pet info</h1></div>
-        <div class="col-12">Post info about a pet you lost or found ... </div>
+        <div class="col-12"><h1>Give pet for adoption</h1></div>
+        <div class="col-12">Post info about a pet you want to give for adoption ... </div>
     </div>
-    <!-- Form -->
+
     <div class="row justify-content-center">
         <div class="col-12 col-md-9">
             <form>
                 <div class="form-group row">
-                    <div class="col-12" id="lostOrFoundPet">
+                    <div class="col-md-3 col-12" id="shelterOrPetOwner">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" name="lostOrFound" type="radio"
-                                   value="" id="lostPet" checked>
-                            <label class="form-check-label" for="lostPet">
-                                Lost my Pet!
-                            </label>
+                            <input class="form-check-input" name="shelterOrOwner" type="radio"
+                                    value="" id="shelter" checked>
+                            <label class="form-check-label" for="shelter">Shelter</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" name="lostOrFound" type="radio"
-                                   value="" id="foundPet">
-                            <label class="form-check-label" for="foundPet">
-                                Found a pet!
-                            </label>
+                            <input class="form-check-input" name="shelterOrOwner" type="radio"
+                                   value="" id="petOwner">
+                            <label class="form-check-label" for="petOwner">Pet owner</label>
                         </div>
+                    </div>
+                    <label class="col-md-2 col-12 col-form-label" for="shelterName">
+                        Shelter name
+                    </label>
+                    <div class="col-12 col-md-7">
+                        <input type="text" class="form-control" id="shelterName" name="shelterName"
+                               placeholder="Shelter name, if applicable...">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="contactName" class="col-md-2 col-form-label">Contact name</label>
-                    <div class="col-md-5">
-                        <input type="text" id="contactName" class="form-control" name="contactName" placeholder="Contact name">
-                    </div>
-                    <label for="contactEmail" class="col-md-1 col-form-label">Email</label>
+                    <label class="col-md-2 col-form-label" for="contactName">Contact name</label>
                     <div class="col-md-4">
-                        <input class="form-control" type="email" id="contactEmail" name="contactEmail" placeholder="Email">
+                        <input type="text" class="form-control" id="contactName" name="contactName"
+                               placeholder="Contact name">
+                    </div>
+                    <label class="col-md-2 col-form-label" for="contactEmail">Email</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" id="contactEmail" name="contactEmail">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -125,32 +130,30 @@
                             <option>Other</option>
                         </select>
                     </div>
-                    <label class="col-form-label col-md-1" for="petColors">Colors</label>
-                    <div class="col-md-6">
-                        <input class="form-control" type="text" id="petColors" name="petColors"
-                               placeholder="Colors, comma separated">
+                    <label class="col-form-label col-md-1" for="petAge">Age</label>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="petAge" name="petAge">
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-md-2" for="areaFound">Area found</label>
-                    <div class="col-md">
-                        <input class="form-control" type="text" id="areaFound" name="areaFound" placeholder="Area found">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-md-2" for="moreInfo">More Info</label>
-                    <div class="col-md-10">
-                        <textarea class="form-control" id="moreInfo" name="moreInfo"
-                                  placeholder="More info about the pet" rows="12"></textarea>
+                    <label class="col-form-label col-md-2" for="petColors">Colors</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="petColors" name="petColors" placeholder="Colors..">
                     </div>
                 </div>
                 <div class="form-group row align-items-center">
                     <label class="col-form-label col-md-2">Photo</label>
                     <div class="col-md-2">
-                        <img class="img-thumbnail d-flex align-self-center" src="./img/pet_photo_placeholder.jpg" alt="Pet photo">
+                        <img class="img-thumbnail d-flex" src="img/pet_photo_placeholder.jpg"
+                             alt="Pet photo">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2">
                         <button type="button" class="btn btn-secondary btn-sm">Upload photo</button>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-2" for="petDescription">Description</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="petDescription" name="petDescription"
+                                placeholder="More info about the pet" rows="12"></textarea>
                     </div>
                 </div>
                 <div class="form-group row justify-content-center">
@@ -158,17 +161,20 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
+
             </form>
         </div>
     </div>
-    <!-- End of Form -->
 </div>
+
 
 <!-- build:js js/main.js -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 <!-- endbuild -->
 
 </body>
+
 </html>

@@ -2,6 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -10,9 +12,69 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
 
-    <title></title>
+    <title>Post lost pet info</title>
 </head>
 <body>
+<header class="jumbotron">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6">
+                <h1>Pet Care Platform</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./">
+                    <span class="fa fa-home fa-lg">Home</span>
+                </a> </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="lostpetsDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-search fa-lg">Lost pets</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lostpetsDropdown">
+                        <a class="dropdown-item" href="./post-lost-pet-info.html">
+                            <span class="fa fa-edit fa-lg">Post lost pet info</span>
+                        </a>
+                        <a class="dropdown-item" href="./search-lost-pet.html">
+                            <span class="fa fa-search fa-lg">Lost & Found Pets</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="petAdoptionDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-child fa-lg">Pet Adoption</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="petAdoptionDropdown">
+                        <a class="dropdown-item" href="./give-pet-for-adoption.html">
+                            <span class="fa fa-edit fa-lg">Give pet for adoption</span>
+                        </a>
+                        <a class="dropdown-item" href="pet-adoption-list.html">
+                            <span class="fa fa-paw fa-lg">Pets for adoption</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of navigation bar -->
+
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>

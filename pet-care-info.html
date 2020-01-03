@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
 
-    <title>Post lost pet info</title>
+    <title>Pet care info</title>
 </head>
+
 <body>
+
 <header class="jumbotron">
     <div class="container">
         <div class="row justify-content-center">
@@ -36,7 +38,7 @@
                 <li class="nav-item"><a class="nav-link" href="./">
                     <span class="fa fa-home fa-lg">Home</span>
                 </a> </li>
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="lostpetsDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fa fa-search fa-lg">Lost pets</span>
@@ -64,21 +66,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="petCareDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="fa fa-info fa-lg">Pet Care</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="petCareDropdown">
-                        <a class="dropdown-item" href="./pet-care-info.html">
-                            <span class="fa fa-info fa-lg">Pet care info</span>
-                        </a>
-                        <a class="dropdown-item" href="./veterinaries-list.html">
-                            <span class="fa fa-list-ul fa-lg">Veterinaries</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="./contactus.html">
+                <li class="nav-item active"><a class="nav-link" href="./contactus.html">
                     <span class="fa fa-phone fa-lg">Contact us</span>
                 </a> </li>
             </ul>
@@ -87,11 +75,79 @@
 </nav>
 <!-- End of navigation bar -->
 
+<div class="container">
+    <!-- Breadcrumb -->
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a> </li>
+            <li class="breadcrumb-item active">Pet care info</li>
+        </ol>
+    </div>
+    <!--End of Breadcrumb -->
+
+    <div class="row">
+        <div class="col-12"><h1>Pet care info</h1></div>
+    </div>
+
+    <!-- List of articles -->
+    <div class="row align-items-center">
+        <div class="col-12">
+            <div class="media">
+                <img class="d-flex img-thumbnail mr-3 align-self-center" src="./img/articles/article1.jpg" alt="article 1">
+                <div class="media-body d-none d-md-block">
+                    <h3>Article about pet care <span class="badge badge-primary">Featured</span></h3>
+                    <p>Article text. Article text. Article text. Article text. Article text.
+                        Article text. Article text. Article text. Article text. Article text.
+                        Article text. Article text. Article text. Article text. Article text.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-12">
+            <div class="media">
+                <img class="d-flex img-thumbnail mr-3 align-self-center" src="./img/articles/article2.jpg" alt="article 1">
+                <div class="media-body d-none d-md-block">
+                    <h3>Article about pet care <span class="badge badge-primary">Featured</span></h3>
+                    <p>Article text. Article text. Article text. Article text. Article text.
+                        Article text. Article text. Article text. Article text. Article text.
+                        Article text. Article text. Article text. Article text. Article text.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-12">
+            <div class="media">
+                <img class="d-flex img-thumbnail mr-3 align-self-center" src="./img/articles/article3.jpg" alt="article 1">
+                <div class="media-body d-none d-md-block">
+                    <h3>Article about pet care <span class="badge badge-primary">Featured</span></h3>
+                    <p>Article text. Article text. Article text. Article text. Article text.
+                        Article text. Article text. Article text. Article text. Article text.
+                        Article text. Article text. Article text. Article text. Article text.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End of List of articles -->
+</div>
+
 <!-- build:js js/main.js -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 <!-- endbuild -->
-
 </body>
+
 </html>

@@ -28,3 +28,8 @@ div#homePageCarousel {
 /* Footer settings */
 #websiteFooter {
   background-color: #84d1ec; }
+
+/* Login window settings */
+#loginModal .modal-header {
+  background-color: #2298ce;
+  color: white; }

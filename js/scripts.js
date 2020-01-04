@@ -41,6 +41,12 @@ $(document).ready(function(){
         }
     })
 
+    /**
+     * Code for login button
+     */
+    $("#loginButton").click(function() {
+        $("#loginModal").modal("toggle");
+    })
 
 
 })

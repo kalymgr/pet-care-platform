@@ -47,3 +47,11 @@ div#homePageCarousel {
   background-color: $third-color;
 
 }
+
+/* Login window settings */
+#loginModal {
+  .modal-header {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

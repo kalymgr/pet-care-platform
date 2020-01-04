@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     require('time-grunt')(grunt);
 
     // Automatically load required Grunt tasks
-   //  require('jit-grunt')(grunt);
+    //  require('jit-grunt')(grunt);
 
     // Inform the jit grunt configuration that useminPrepare task depends on the usemin package
     require('jit-grunt')(grunt, {
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,  // enable dynamic expansion
                     cwd: './',  // src matches are relative to this path
-                    src: ['img/*'],
+                    src: ['img/*.*','img/**/*.*'],
                     dest: 'dist'
                 }]
             }
@@ -86,7 +86,9 @@ module.exports = function(grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['post-lost-pet-info.html', 'index.html', 'search-lost-pet.html']
+                //src: ['post-lost-pet-info.html', 'index.html', 'search-lost-pet.html',
+                // 'contactus.html', 'pet-adoption-list.html']
+                src:['*.html']
             },
             options: {
                 flow: {
@@ -151,7 +153,8 @@ module.exports = function(grunt) {
         // options.assetDirs contains the directories for finding the assets
         // according to their relative path
         usemin: {
-            html: ['dist/post-lost-pet-info.html', 'dist/search-lost-pet.html', 'dist/index.html'],
+            // html: ['dist/post-lost-pet-info.html', 'dist/search-lost-pet.html', 'dist/index.html'],
+            html: ['dist/*.html'],
             options: {
                 assetDirs: ['dist', 'dist/css', 'dist/js']
             }
@@ -165,7 +168,12 @@ module.exports = function(grunt) {
                 files: {  // dictionary of files
                     'dist/post-lost-pet-info.html': 'dist/post-lost-pet-info.html',
                     'dist/search-lost-pet.html': 'dist/search-lost-pet.html',
-                    'dist/index.html': 'dist/index.html'
+                    'dist/index.html': 'dist/index.html',
+                    'dist/contactus.html': 'dist/contactus.html',
+                    'dist/give-pet-for-adoption.html': 'dist/give-pet-for-adoption.html',
+                    'dist/pet-adoption-list.html': 'dist/pet-adoption-list.html',
+                    'dist/pet-care-info.html': 'dist/pet-care-info.html',
+                    'dist/veterinaries-list.html': 'dist/veterinaries-list.html'
 
                 }
             }

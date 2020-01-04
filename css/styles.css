@@ -4,7 +4,12 @@
 
 /* Jumbotron settings */
 .jumbotron {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  padding: 1rem; }
+  .jumbotron h1 {
+    color: #2298ce; }
+  .jumbotron p {
+    color: #CE5922; }
 
 img.img-thumbnail {
   width: 150px; }

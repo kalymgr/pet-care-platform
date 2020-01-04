@@ -13,6 +13,14 @@ $carousel-item-height: 250px;
 /* Jumbotron settings */
 .jumbotron {
   margin-bottom: 0px;
+  padding: 1rem;
+
+  h1 {
+    color: $secondary-color;
+  }
+  p {
+    color: $primary-color;
+  }
 }
 
 img.img-thumbnail {

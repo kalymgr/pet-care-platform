@@ -1,7 +1,9 @@
 $primary-color: #CE5922;
 $secondary-color: #2298ce;
+$third-color: #84d1ec;
 $image-thumbnail-width: 150px;
-$carousel-item-height: 200px;
+$carousel-item-height: 250px;
+
 
 .navbar-dark {
   background-color: $primary-color;
@@ -38,5 +40,10 @@ div#homePageCarousel {
     bottom: 0;
     z-index: 1;
   }
+}
+
+/* Footer settings */
+#websiteFooter {
+  background-color: $third-color;
 
 }

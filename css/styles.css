@@ -38,3 +38,6 @@ div#homePageCarousel {
 #loginModal .modal-header {
   background-color: #2298ce;
   color: white; }
+
+h1 {
+  margin-bottom: 2rem; }

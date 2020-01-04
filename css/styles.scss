@@ -1,6 +1,7 @@
 $primary-color: #CE5922;
 $secondary-color: #2298ce;
 $image-thumbnail-width: 150px;
+$carousel-item-height: 200px;
 
 .navbar-dark {
   background-color: $primary-color;
@@ -14,4 +15,28 @@ $image-thumbnail-width: 150px;
 
 img.img-thumbnail {
   width: $image-thumbnail-width;
+}
+
+/* Home page carousel settings */
+div#homePageCarousel {
+  background-color: $secondary-color;
+
+  .carousel-item {
+    height: $carousel-item-height;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: $carousel-item-height;
+  }
+
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
 }

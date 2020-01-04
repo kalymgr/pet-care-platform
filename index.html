@@ -91,10 +91,86 @@
 </nav>
 <!-- End of navigation bar -->
 
+<div class="container">
+
+    <!-- Home page carousel -->
+    <div class="row">
+        <div class="col">
+            <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!-- carousel items -->
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="img/rocky.jpg" alt="rocky">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Lost and Found pets</h3>
+                            <p class="d-none d-sm-block">
+                                Find your lost pet!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="img/lacta.jpg" alt="lacta">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Pet adoption</h3>
+                            <p class="d-none d-sm-block">
+                                Making it easier to adopt a pet
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="img/bugs.jpg" alt="bugs">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Pet care</h3>
+                            <p class="d-none d-sm-block">
+                                Pet care information and services
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of carousel items -->
+                </div>
+                <!-- Carousel indicators, controls and buttons -->
+                <ol class="carousel-indicators">
+                    <li data-target="#homePageCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#homePageCarousel" data-slide-to="1"></li>
+                    <li data-target="#homePageCarousel" data-slide-to="2"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#homePageCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#homePageCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <button class="btn btn-danger btn-sm" id="carouselButton">
+                    <span id="carousel-button-icon" class="fa fa-pause"></span>
+                </button>
+                <!-- End of Carousel indicators, controls and buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- End of Home page carousel -->
+
+    <!-- Blockquote -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-body bg-light">
+                <blockquote class="blockquote text-center">
+                    No one takes cares of your pet more than we do!
+                    <footer class="blockquote-footer">
+                        The Creator
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <!-- End of Blockquote -->
+
+</div>
+
 <!-- build:js js/main.js -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 <!-- endbuild -->
 
 </body>

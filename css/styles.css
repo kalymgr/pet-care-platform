@@ -8,3 +8,19 @@
 
 img.img-thumbnail {
   width: 150px; }
+
+/* Home page carousel settings */
+div#homePageCarousel {
+  background-color: #2298ce; }
+  div#homePageCarousel .carousel-item {
+    height: 200px; }
+  div#homePageCarousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 200px; }
+  div#homePageCarousel #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1; }
